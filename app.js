@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
           }
           );
         }
-      }, 300);
+      }, 1000);
       
     }
     buttonElement.addEventListener("click", function() {
