@@ -99,7 +99,7 @@ body{
     cursor: pointer;
     transition: 1s;
 }
-.placar > .butplacar{
+.placar > .btnplacar{
     display: none;
 }
 .placar{
@@ -114,7 +114,75 @@ body{
     flex-direction: column;
 
 }
+.placar > label{
+    color: white;
+    margin: 32px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.placar > label > input{
+    font-size: 20px;
+    border: solid black 2px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.589);
+}
+.placar > label > input::placeholder{
+    color: rgb(64, 63, 63);
+    text-align: center;
+}
+.iniciar{
+    background: grey;
+    font-size: 30px;
+    width: 200px;
+    margin: auto;
+    margin-top: -3px;
+    border-radius: 10px;
+    border: white solid 2px;
+    box-shadow: 2px 2px 10px black;cursor: pointer
+    ;
+    color: white;
+    transition: 1.2s;
+}
+.iniciar:hover{
+    transform: translateX(3px);
+    background-color: green;
+    animation: infinite 3s rgb;
 
+
+}
+@keyframes rgb {
+    10%{
+        box-shadow: 4px 4px 20px white;
+    }
+    20%{
+        box-shadow: 4px 4px 20px green;
+    }
+    30%{
+        box-shadow: 4px 4px 20px blue;
+    }
+    40%{
+        box-shadow: 4px 4px 20px red;
+    }
+    50%{
+        box-shadow: 4px 4px 20px yellow;
+    }
+    60%{
+        box-shadow: 4px 4px 20px purple;
+    }
+    70%{
+        box-shadow: 4px 4px 20px black;
+    }
+    80%{
+        box-shadow: 4px 4px 20px gray;
+    }
+    90%{
+        box-shadow: 4px 4px 20px wheat;
+    }
+    100%{
+        box-shadow: 4px 4px 20px white;
+    }
+}
 .rank{
     display: flex;
     background-color: rgba(44, 43, 43, 0.493);
