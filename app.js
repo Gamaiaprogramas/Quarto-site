@@ -2,6 +2,8 @@ const numero1 = document.querySelector('#idnumero1');
 const numero2 = document.querySelector('#idnumero2');
 const pontuacao = document.querySelector('#idpontos');
 const resposta = document.querySelector('#idresposta');
+const nome = document.querySelector('#Nomes');
+const mensagem = document.querySelector('#primeiro');
 var tempo;
 var duration;
 var minutos;
@@ -25,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
       buttonElement.disabled = true;
       tempoForm.querySelectorAll("input[type=radio]").forEach(function(radio) {
         radio.disabled = true;
+        nome.disabled=true;
         seila = 1;
         
       });
@@ -35,12 +38,15 @@ document.addEventListener("DOMContentLoaded", function() {
         if (contador <= tempo) {
 
           inputElement.value = contador;
+          
         } else {
           clearInterval(timer);
           buttonElement.disabled = false;
           tempoForm.querySelectorAll("input[type=radio]").forEach(function(radio) {
+            fim = 1;
             radio.disabled = false;
-             
+            nome.disabled= false;
+            mensagem.value = "1º lugar foi de " + nome.value + " com a pontuação de " + pontos;
           });
         }
       }, 300);
@@ -63,6 +69,10 @@ function sorteio(){
 function verifica(){
    if(seila == 0){
     verifica().disabled= true;
+   }
+   if(fim == 1){
+    verifica().disabled= true;
+    
    }
    if(resposta.value != ""){
     if(resposta.value == correta){ 
@@ -94,6 +104,7 @@ document.addEventListener('keyup', (Event)=>{
     }
 
 }) ;
+
 
 
 
