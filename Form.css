@@ -99,7 +99,7 @@ body{
     cursor: pointer;
     transition: 1s;
 }
-.placar > button{
+.placar > .butplacar{
     display: none;
 }
 .placar{
@@ -122,9 +122,14 @@ body{
     border-radius: 10px;
     height: 500px;
     width: 350px;
-
+    color:  white;
     display: flex;
     flex-direction: column;
+}
+.rankResult{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
 }
 .rank> button{
     display: none;
@@ -164,11 +169,13 @@ body{
     font-size: 30px;
     text-align: center;
     display: none;
+
 }
 
 @media screen and (max-width: 1081px ) and (max-height:789px) {
 body{
         overflow-x: hidden;
+        overflow-y: hidden;
 }
 .ultraContainer{
         transition: 1s;
@@ -198,6 +205,8 @@ body{
     position: absolute;
     cursor: pointer;
     display: block;
+    background-color: transparent;
+    border: none;
 }
 .butrank > button{
         font-size: 40px;
@@ -213,13 +222,14 @@ body{
     transform: translateX(-200vh);
 }
 
-.placar > button{
-    position: absolute;
+.btnplacar{
+    
     font-size: 30px;
     padding: 3px;
     height:40px;
     display: block;
     margin-left: 250px;
+    cursor: pointer;
 }
 .butplacar{
     transition: 1s;
@@ -247,6 +257,8 @@ body{
     font-size: 30px;
     text-align: center;
     display: block;
+    animation:  rankani 1s;
+    transition: 2s;
     
     }
 #idrank{
@@ -262,9 +274,21 @@ body{
     text-align: center;
     display: block;
     cursor: pointer;
-  
+    animation:  rankani 1s;
+    transition: 2s;
+    
     }
+    @keyframes rankani {
+        from{
+            transform: translateY(110vh);
+        }
+        to{
+            transform: translateY(0vh);
+        }
+    }
+    
 }
+
 
 input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{
     -webkit-appearance: none;
