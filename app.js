@@ -5,6 +5,7 @@ const resposta = document.querySelector('#idresposta');
 const nome = document.querySelector('#Nomes');
 const mensagem = document.querySelector('#primeiro');
 const rank = document.querySelector('#ranking');
+const plac = document.querySelector('#tempo-form')
 var tempo;
 var duration;
 var minutos;
@@ -14,6 +15,8 @@ var pontos = 0;
 var i = 0 ;
 var seila = 0;
 var fim = 0; 
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const inputElement = document.getElementById("meuInput");
     const buttonElement = document.getElementById("meuBotao");
@@ -48,7 +51,10 @@ document.addEventListener("DOMContentLoaded", function() {
             radio.disabled = false;
             nome.disabled= false;
             mensagem.value = "1º lugar foi de " + nome.value + " com a pontuação de " + pontos;
-          });
+            
+            
+          }
+          );
         }
       }, 300);
       
@@ -57,8 +63,8 @@ document.addEventListener("DOMContentLoaded", function() {
       const tempoSelecionado = tempoForm.querySelector("input[type=radio]:checked").value;
       iniciarTimer(Number(tempoSelecionado));
     } );
-})
-   ;
+});
+   
 function sorteio(){
     top1 = Math.ceil(Math.random()*10);
     numero1.value = top1;
@@ -101,6 +107,16 @@ function voltar(){
   rank.classList.remove('butrank');
   rank.classList.add('rank');
 }
+
+function botoes2(){
+  plac.classList.add('butplacar');
+  plac.classList.remove('placar');
+}
+function voltar2(){
+  plac.classList.remove('butplacar');
+  plac.classList.add('placar');
+}
+
 function iniciar(){
     resposta.value = "";
     sorteio();
