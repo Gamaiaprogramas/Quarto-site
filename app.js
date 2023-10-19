@@ -4,6 +4,7 @@ const pontuacao = document.querySelector('#idpontos');
 const resposta = document.querySelector('#idresposta');
 const nome = document.querySelector('#Nomes');
 const mensagem = document.querySelector('#primeiro');
+const rank = document.querySelector('#ranking');
 var tempo;
 var duration;
 var minutos;
@@ -92,7 +93,14 @@ function verifica(){
    }
    
 }
-
+function botoes(){
+  rank.classList.add('butrank');
+  rank.classList.remove('rank');
+}
+function voltar(){
+  rank.classList.remove('butrank');
+  rank.classList.add('rank');
+}
 function iniciar(){
     resposta.value = "";
     sorteio();

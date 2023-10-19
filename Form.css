@@ -99,9 +99,7 @@ body{
     cursor: pointer;
     transition: 1s;
 }
-.butão:hover{
-  
-}
+
 .placar{
     display: flex;
     background-color: rgba(44, 43, 43, 0.493);
@@ -125,6 +123,13 @@ body{
     display: flex;
     flex-direction: column;
 }
+.rank> button{
+    display: none;
+}
+.rank > h1{
+    text-align: center;
+}
+
 .ultraContainer{
     display: flex;
     justify-content: space-around;
@@ -171,6 +176,36 @@ display: none;
     transform: translateX(200vh);
         
     }
+    .butrank{
+        transition: 1s;
+        transform: translateX(0vh);
+        text-align: center;
+        background-color:gray;
+        border: 5px solid  grey;
+        border-radius: 10px;
+        height: 500px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+    .rank > button{
+
+    font-size: 40px;
+    padding: 1px 11px;
+    text-align: center;
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    }
+    .butrank > button{
+
+        font-size: 40px;
+        padding: 1px 11px;
+        text-align: center;
+        position: absolute;
+        cursor: pointer;
+        display: block;
+        }
     .placar{
         transition: 1s;
         transform: translateX(-200vh);

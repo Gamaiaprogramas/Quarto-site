@@ -44,13 +44,14 @@
         <input type="text" name="pontos" id="idpontos" readonly class="result">
         <input type="number" name="tempo" id="meuInput" readonly value="0">
         <input type="button" value="placar" id="idplacar" >
-        <input type="button" value="rank" id="idrank">
+        <input type="button" value="rank" id="idrank" onclick="botoes()">
     </div>
     </form>
     
     
     </div>
-    <div class="rank">
+    <div class="rank" id="ranking">
+        <button onclick="voltar()">x</button>
         <h1>Ranking</h1>
         <input type="text" id="primeiro" readonly value=" ">
     </div>
