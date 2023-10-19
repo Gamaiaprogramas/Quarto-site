@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Form.css">
+    <title>Minecraft</title>
+</head>
+<body>
+    <div class="ultraContainer">
+
+
+    <form id="tempo-form" class="placar">
+        <label>
+            <p>nome</p>
+            <input type="text" id="Nomes">
+        </label>
+        <label>
+            <input type="radio" name="tempo" value="30"> 30 segundos
+        </label>
+        <label>
+            <input type="radio" name="tempo" value="60"> 1 minuto
+        </label>
+        <label>
+            <input type="radio" name="tempo" value="90" checked> 1 minuto e meio
+        </label>
+        <button id="meuBotao">Iniciar Timer</button>
+
+
+    </form>
+    <div class="container">
+        <form>
+            <div class="alinhamento"> 
+                <input type="number" name="numero1" id="idnumero1" value="0" readonly class="input1">
+        <div class="x">x</div>
+        
+        <input type="number" name="numero2" id="idnumero2" value="0"    readonly class="input1">
+        </div>
+       
+        <div class="alin">
+            <input type="number" name="resposta" id="idresposta" class="questao">
+        <input type="button" value="conferir" id="idconferir" onclick="verifica()" class="butão">
+        <input type="text" name="pontos" id="idpontos" readonly class="result">
+        <input type="number" name="tempo" id="meuInput" readonly value="0">
+        <input type="button" value="placar" id="idplacar" >
+        <input type="button" value="rank" id="idrank">
+    </div>
+    </form>
+    
+    
+    </div>
+    <div class="rank">
+        <h1>Ranking</h1>
+        <p></p>
+    </div>
+
+
+    </div>
+        
+    <script src="app.js"></script>
+</body>
+</html>

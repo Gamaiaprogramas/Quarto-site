@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container {
+    display: flex;
+    background-color: rgba(44, 43, 43, 0.493);
+    border: 5px solid  grey;
+    border-radius: 10px;
+    height: 500px;
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.input1{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 110px;
+}
+.x{
+    font-size: 70px;
+    line-height: 130px;
+    color: white;
+}
+.alinhamento{
+    display: flex;
+    justify-content: space-evenly;
+}
+.alinhamento>input{
+    width: 30%;
+    text-align: center;
+}
+.result{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    width: 160px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.correto{
+    transition: 1s;
+    background-color: green;
+    box-shadow: 2px 2px 30px  green;
+}
+
+.errado{
+    transition: 1s;
+    background-color: red;
+    box-shadow: 2px 2px 30px red;
+}
+.ingual{
+    color: white;
+    font-size: 70px;
+}
+.alin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.questao{
+    margin:  50px 0px;
+    height: 80px;
+    width: 400px;
+    border: 5px solid rgb(182, 178, 178);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.329);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.butão{
+    font-size: 60px;
+    padding: 0px 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -30px;
+
+    border-radius: 10px;
+    background-color: green;
+    box-shadow: 2px 2px 40px rgb(88, 88, 88);
+    color: aliceblue;
+    cursor: pointer;
+    transition: 1s;
+}
+.butão:hover{
+  
+}
+.placar{
+    display: flex;
+    background-color: rgba(44, 43, 43, 0.493);
+    border: 5px solid  grey;
+    border-radius: 10px;
+    height: 500px;
+    width: 350px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+.rank{
+    display: flex;
+    background-color: rgba(44, 43, 43, 0.493);
+    border: 5px solid  grey;
+    border-radius: 10px;
+    height: 500px;
+    width: 350px;
+
+    display: flex;
+    flex-direction: column;
+}
+.ultraContainer{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px auto;
+    transition: 2s;
+}
+#idrank{
+    margin: 100px;
+margin-right: -250px;
+border: 5px solid black;
+border-radius: 10px;
+width: 100px;
+height: 50px;
+background-color: rgba(128, 128, 128, 0.555);
+color: white;
+font-size: 30px;
+text-align: center;
+display: none;
+}
+#idplacar{
+    margin: -150px;
+    margin-right: 200px;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;  
+    background-color: rgba(128, 128, 128, 0.555);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    display: none;
+}
+
+@media screen and (max-width: 1081px ) and (max-height:789px) {
+
+    
+    .rank{
+      display: none;
+    
+        
+    }
+    .placar{
+        display: none;
+    }
+    #idplacar{
+        margin: -150px;
+        margin-right: 200px;
+        border: 5px solid black;
+        border-radius: 10px;
+        width: 100px;
+        height: 50px;  
+        background-color: rgba(128, 128, 128, 0.555);
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        display: block;
+    
+    }
+    #idrank{
+        margin: 100px;
+    margin-right: -250px;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: rgba(128, 128, 128, 0.555);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+  
+    }
+}
+
+input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+#meuInput{
+    margin-top: 30px;
+    height: 70px;
+    border: 5px solid black ;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.555);
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    width: 120px;
+    font-family: 'Pixelify Sans', cursive;
+}
+#placares{
+    height:100px;
+    width: 90px;
+    background-color: black;
+    
+}
